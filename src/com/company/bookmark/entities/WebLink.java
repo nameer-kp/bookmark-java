@@ -12,6 +12,14 @@ public class WebLink extends Bookmark{
         this.url = url;
     }
 
+    @Override
+    public String toString() {
+        return "WebLink{" +
+                "url='" + url + '\'' +
+                ", host='" + host + '\'' +
+                '}';
+    }
+
     public String getHost() {
         return host;
     }

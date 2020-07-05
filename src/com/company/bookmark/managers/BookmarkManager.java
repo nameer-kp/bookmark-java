@@ -1,11 +1,14 @@
 package com.company.bookmark.managers;
 
+import com.company.bookmark.dao.BookmarkDao;
 import com.company.bookmark.entities.Book;
+import com.company.bookmark.entities.Bookmark;
 import com.company.bookmark.entities.Movie;
 import com.company.bookmark.entities.WebLink;
 
 public class BookmarkManager {
     private static BookmarkManager instance = new BookmarkManager();
+    private static BookmarkDao dao=new BookmarkDao();
     private BookmarkManager(){}
     public static BookmarkManager getInstance(){
         return instance;
@@ -37,14 +40,17 @@ public class BookmarkManager {
         return book;
     }
 
-    public WebLink createWebLink(long id,String title,String profileUrl,String url,String host)
+    public WebLink createWebLink(long id,String title,String url,String host)
     {
         WebLink webLink=new WebLink();
         webLink.setId(id);
         webLink.setTitle(title);
-        webLink.setProfileUrl(profileUrl);
         webLink.setHost(host);
         webLink.setUrl(url);
         return webLink;
+    }
+    public Bookmark[][] getBookmark(){
+
+        return dao.getBookmark();
     }
 }

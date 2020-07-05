@@ -6,6 +6,20 @@ public class User {
     private String email;
     private String password;
     private String firstName;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender=" + gender +
+                ", userType='" + userType + '\'' +
+                '}';
+    }
+
     private String lastName;
     private int gender;
     private String userType;

@@ -5,6 +5,15 @@ public class Bookmark {
     private String title;
     private String profileUrl;
 
+    @Override
+    public String toString() {
+        return "Bookmark{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", profileUrl='" + profileUrl + '\'' +
+                '}';
+    }
+
     public long getId() {
         return id;
     }

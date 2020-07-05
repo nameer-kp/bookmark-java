@@ -1,9 +1,11 @@
 package com.company.bookmark.managers;
 
+import com.company.bookmark.dao.UserDao;
 import com.company.bookmark.entities.User;
 
 public class  UserManager {
     private static UserManager instance = new UserManager();
+    private static UserDao dao=new UserDao();
     private UserManager(){}
     public static UserManager getInstance(){
         return instance;
@@ -18,5 +20,8 @@ public class  UserManager {
         user.setUserType(userType);
         return user;
 
+    }
+    public User[] getUsers(){
+        return dao.getUsers();
     }
 }
