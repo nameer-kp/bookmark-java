@@ -1,0 +1,5 @@
+1000	user0@semanticsquare.com	test	John	M	0	user
+1001	user1@semanticsquare.com	test	Sam	    M	0	user
+1002	user2@semanticsquare.com	test	Anita	M	1	editor
+1003	user3@semanticsquare.com	test	Sara	M	1	editor
+1004	user4@semanticsquare.com	test	Dheeru	M	0	chiefeditor
