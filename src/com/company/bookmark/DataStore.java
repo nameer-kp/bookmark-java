@@ -15,6 +15,7 @@ public class DataStore {
     public static final int BOOKMARK_COUNT_PER_TYPE = 5;
     public static final int TOTAL_USER_COUNT = 5;
     public static final int BOOKMARK_TYPES_COUNT = 3;
+    public static int USER_BOOKMARK_COUNT = 0;
 
     public static User[] getUsers() {
         return users;
@@ -23,6 +24,7 @@ public class DataStore {
     public static Bookmark[][] getBookmarks() {
         return bookmarks;
     }
+
 
     private static User[] users=new User[TOTAL_USER_COUNT];
     private static Bookmark[][] bookmarks=new Bookmark[BOOKMARK_TYPES_COUNT][BOOKMARK_COUNT_PER_TYPE];
@@ -66,5 +68,10 @@ public class DataStore {
         bookmarks[2][4]=BookmarkManager.getInstance().createBook(4004,"Effective Java Programming Language Guide","",2007,"Prentice Hall",new String[]{"Joshua Bloch"}, BookGenre.TECHNICAL,4.9);
     }
 
+    public static void saveUserBookmark(UserBookmark userBookmark) {
+        userBookmarks[USER_BOOKMARK_COUNT]=userBookmark;
+        USER_BOOKMARK_COUNT++;
+
+    }
 }
 

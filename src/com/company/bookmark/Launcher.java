@@ -28,6 +28,15 @@ public class Launcher {
 
     public static void main(String[] args) {
         loadData();
+        startBookmarking();
+
+    }
+
+    private static void startBookmarking() {
+        System.out.println("\nStart Bookmarking");
+        for (User user:users) {
+            View.bookmark(user,bookmarks);
+        }
 
     }
 }
