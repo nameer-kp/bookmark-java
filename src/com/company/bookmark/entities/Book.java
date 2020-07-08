@@ -1,5 +1,7 @@
 package com.company.bookmark.entities;
 
+import com.company.bookmark.constants.BookGenre;
+
 public class Book extends Bookmark {
     private int publicationYear;
     private String publisher;
@@ -45,5 +47,10 @@ public class Book extends Bookmark {
 
     public void setAmazonRating(double amazonRating) {
         this.amazonRating = amazonRating;
+    }
+
+    @Override
+    public boolean isKidFriendly() {
+        return !genre.contains(BookGenre.PHILOSOPHY)&&!genre.contains(BookGenre.SELF_HELP);
     }
 }

@@ -20,6 +20,11 @@ public class WebLink extends Bookmark{
                 '}';
     }
 
+    @Override
+    public boolean isKidFriendly() {
+        return !url.contains("porn") && !getTitle().contains("porn") && !host.contains("adult");
+    }
+
     public String getHost() {
         return host;
     }
