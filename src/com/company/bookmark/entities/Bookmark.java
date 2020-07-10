@@ -1,9 +1,21 @@
 package com.company.bookmark.entities;
 
+import com.company.bookmark.constants.KidsFriendlyStatus;
+
 public abstract class Bookmark {
     private long id;
     private String title;
     private String profileUrl;
+
+    public String getKidFriendlyStatus() {
+        return kidFriendlyStatus;
+    }
+
+    public void setKidFriendlyStatus(String kidFriendlyStatus) {
+        this.kidFriendlyStatus = kidFriendlyStatus;
+    }
+
+    private String kidFriendlyStatus= KidsFriendlyStatus.UNKNOWN;
 
     @Override
     public String toString() {

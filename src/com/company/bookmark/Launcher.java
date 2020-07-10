@@ -14,16 +14,16 @@ public class Launcher {
     private static void loadData(){
         System.out.println("Loading data...");
         DataStore.loadData();
-        System.out.println("Printing data...");
+//        System.out.println("Printing data...");
         users = UserManager.getInstance().getUsers();
         bookmarks= BookmarkManager.getInstance().getBookmark();
-        for (User user:users) {
-            System.out.println(user);
-        }
-        for (Bookmark [] bookmarkList:bookmarks)
-            for (Bookmark bookmark:bookmarkList) {
-                System.out.println(bookmark);
-            }
+//        for (User user:users) {
+//            System.out.println(user);
+//        }
+//        for (Bookmark [] bookmarkList:bookmarks)
+//            for (Bookmark bookmark:bookmarkList) {
+//                System.out.println(bookmark);
+//            }
     }
 
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class Launcher {
     private static void startBookmarking() {
         System.out.println("\nStart Bookmarking");
         for (User user:users) {
-            View.bookmark(user,bookmarks);
+            View.browse(user,bookmarks);
         }
 
     }
