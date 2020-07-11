@@ -7,6 +7,18 @@ public abstract class Bookmark {
     private String title;
     private String profileUrl;
 
+    private User kidsFriendlyMarkedUser;
+
+    public User getSharedBy() {
+        return sharedBy;
+    }
+
+    public void setSharedBy(User sharedBy) {
+        this.sharedBy = sharedBy;
+    }
+
+    private User sharedBy;
+
     public String getKidFriendlyStatus() {
         return kidFriendlyStatus;
     }
@@ -25,8 +37,8 @@ public abstract class Bookmark {
                 ", profileUrl='" + profileUrl + '\'' +
                 '}';
     }
-    public abstract boolean isKidFriendly();
 
+    public abstract boolean isKidFriendly();
     public long getId() {
         return id;
     }
@@ -49,5 +61,13 @@ public abstract class Bookmark {
 
     public void setProfileUrl(String profileUrl) {
         this.profileUrl = profileUrl;
+    }
+
+    public User getKidsFriendlyMarkedUser() {
+        return kidsFriendlyMarkedUser;
+    }
+
+    public void setKidsFriendlyMarkedUser(User kidsFriendlyMarkedUser) {
+        this.kidsFriendlyMarkedUser = kidsFriendlyMarkedUser;
     }
 }

@@ -5,6 +5,7 @@ import com.company.bookmark.constants.UserType;
 import com.company.bookmark.controllers.Controller;
 import com.company.bookmark.entities.Bookmark;
 import com.company.bookmark.entities.User;
+import com.company.bookmark.partner.Shareable;
 
 public class View {
   /*  public static void bookmark(User user, Bookmark[][] bookmarks){
@@ -39,8 +40,14 @@ public class View {
                     if (bookmark.getKidFriendlyStatus().equals(KidsFriendlyStatus.UNKNOWN)&&bookmark.isKidFriendly()){
                         String kidFriendlyStatus = getKidFriendlyStatusDecision(bookmark);
                         if(!kidFriendlyStatus.equals(KidsFriendlyStatus.UNKNOWN)) {
-                            bookmark.setKidFriendlyStatus(kidFriendlyStatus);
-                            System.out.println("kidfriendlyStatus"+","+kidFriendlyStatus+"--> "+bookmark);
+                            Controller.getInstance().setKidFriendlyStatus(kidFriendlyStatus,user,bookmark);
+
+                        }
+                    }
+                    if (bookmark.getKidFriendlyStatus().equals(KidsFriendlyStatus.UNKNOWN)&& bookmark instanceof Shareable){
+                        boolean isShared=getShareDecision();
+                        if (isShared){
+                            Controller.getInstance().share(user,bookmark);
                         }
                     }
                 }
@@ -48,6 +55,10 @@ public class View {
             }
 
         }
+
+    private static boolean getShareDecision() {
+        return Math.random() < 0.5;
+    }
 
     private static String getKidFriendlyStatusDecision(Bookmark bookmark) {
         return Math.random()<0.4?KidsFriendlyStatus.APPROVED:(Math.random()>=0.4&&Math.random()<0.8)?KidsFriendlyStatus.REJECTED:KidsFriendlyStatus.UNKNOWN;

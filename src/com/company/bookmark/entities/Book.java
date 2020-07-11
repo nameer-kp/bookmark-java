@@ -60,13 +60,13 @@ public class Book extends Bookmark implements Shareable {
     public String getItemData() {
         StringBuilder builder = new StringBuilder();
         builder.append("<item>");
-        builder.append("<Title>");
+        builder.append("<Title>").append(getTitle()).append("</Title>");
         builder.append("<authors>").append(StringUtils.join(authors,",")).append("</authors");
         builder.append("<publisher>").append(publisher).append("</publisher");
         builder.append("<publicationYear").append(publicationYear).append("</publicationYear>");
         builder.append("<genre>").append(genre).append("</genre>");
         builder.append("<amazonRating>").append(amazonRating).append("</amazonRating>");
-        builder.append("</Title>");
+
         builder.append("</item>");
 
         return builder.toString();
