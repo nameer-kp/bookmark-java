@@ -1,9 +1,33 @@
 package com.company.bookmark.entities;
 
-public class Bookmark {
+import com.company.bookmark.constants.KidsFriendlyStatus;
+
+public abstract class Bookmark {
     private long id;
     private String title;
     private String profileUrl;
+
+    private User kidsFriendlyMarkedUser;
+
+    public User getSharedBy() {
+        return sharedBy;
+    }
+
+    public void setSharedBy(User sharedBy) {
+        this.sharedBy = sharedBy;
+    }
+
+    private User sharedBy;
+
+    public String getKidFriendlyStatus() {
+        return kidFriendlyStatus;
+    }
+
+    public void setKidFriendlyStatus(String kidFriendlyStatus) {
+        this.kidFriendlyStatus = kidFriendlyStatus;
+    }
+
+    private String kidFriendlyStatus= KidsFriendlyStatus.UNKNOWN;
 
     @Override
     public String toString() {
@@ -14,6 +38,7 @@ public class Bookmark {
                 '}';
     }
 
+    public abstract boolean isKidFriendly();
     public long getId() {
         return id;
     }
@@ -36,5 +61,13 @@ public class Bookmark {
 
     public void setProfileUrl(String profileUrl) {
         this.profileUrl = profileUrl;
+    }
+
+    public User getKidsFriendlyMarkedUser() {
+        return kidsFriendlyMarkedUser;
+    }
+
+    public void setKidsFriendlyMarkedUser(User kidsFriendlyMarkedUser) {
+        this.kidsFriendlyMarkedUser = kidsFriendlyMarkedUser;
     }
 }

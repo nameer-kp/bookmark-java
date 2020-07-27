@@ -57,4 +57,14 @@ public class BookmarkManager {
         userBookmark.setBookmark(bookmark);
         dao.saveUserBookmark(userBookmark);
     }
+
+    public void share(User user, Bookmark bookmark) {
+        bookmark.setSharedBy(user);
+        if (bookmark instanceof Book){
+            System.out.println(((Book)bookmark).getItemData());}
+        else {
+            System.out.println(((WebLink)bookmark).getItemData());
+        }
+
+    }
 }
