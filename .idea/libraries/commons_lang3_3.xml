@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="commons-lang3-3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/commons-lang3-3.11" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/commons-lang3-3.11/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/commons-lang3-3.11" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/commons-lang3-3.11" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/commons-lang3-3.11" recursive="false" type="SOURCES" />
+  </library>
+</component>
