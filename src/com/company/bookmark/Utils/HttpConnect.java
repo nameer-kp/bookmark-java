@@ -2,7 +2,7 @@ package com.company.bookmark.Utils;
 
 import java.io.IOException;
 import java.net.*;
-
+//HttpConnect class for connecting and retriving input Stream from webpage
 public class HttpConnect {
     public static String download(String sourceUrl) throws URISyntaxException, MalformedURLException {
         URL url = new URI(sourceUrl).toURL();
