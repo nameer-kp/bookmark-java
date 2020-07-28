@@ -1,9 +1,7 @@
 package com.company.bookmark;
 
-import com.company.bookmark.IOutils.IOutils;
-import com.company.bookmark.constants.BookGenre;
+import com.company.bookmark.Utils.IOutils;
 import com.company.bookmark.constants.Gender;
-import com.company.bookmark.constants.MovieGenre;
 import com.company.bookmark.entities.Bookmark;
 import com.company.bookmark.entities.User;
 import com.company.bookmark.entities.UserBookmark;

@@ -1,7 +1,12 @@
 package com.company.bookmark.managers;
 
+import com.company.bookmark.Utils.HttpConnect;
+import com.company.bookmark.Utils.IOutils;
 import com.company.bookmark.dao.BookmarkDao;
 import com.company.bookmark.entities.*;
+
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 
 public class BookmarkManager {
     private static BookmarkManager instance = new BookmarkManager();
@@ -56,7 +61,25 @@ public class BookmarkManager {
         userBookmark.setUser(user);
         userBookmark.setBookmark(bookmark);
         dao.saveUserBookmark(userBookmark);
+        if (bookmark instanceof WebLink)
+        {
+            try{
+                String url = ((WebLink) bookmark).getUrl();
+                if (!url.endsWith(".pdf")){
+                    String webpage = HttpConnect.download(url);
+                    if ((webpage)!= null)
+                    {
+                        IOutils.write(webpage,bookmark.getId());
+                    }
+                }
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        }
     }
+
 
     public void share(User user, Bookmark bookmark) {
         bookmark.setSharedBy(user);
