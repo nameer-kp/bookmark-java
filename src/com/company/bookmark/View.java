@@ -7,6 +7,8 @@ import com.company.bookmark.entities.Bookmark;
 import com.company.bookmark.entities.User;
 import com.company.bookmark.partner.Shareable;
 
+import java.util.List;
+
 public class View {
   /*  public static void bookmark(User user, Bookmark[][] bookmarks){
         System.out.println("\n"+user.getEmail()+" is bookmarking");
@@ -20,20 +22,20 @@ public class View {
         }
     }
   */
-    public static void browse(User user,Bookmark[][] bookmarks)
+    public static void browse(User user, List<List<Bookmark>> bookmarks)
     {
         System.out.println("\n"+user.getEmail()+" is bookmarking");
         int bookmarkCount=0;
-        for (Bookmark [] bookmarklist:bookmarks) {
+        for (List<Bookmark> bookmarklist:bookmarks) {
             for (Bookmark bookmark:bookmarklist) {
-                if (bookmarkCount<DataStore.USER_BOOKMARK_LIMIT){
+               // if (bookmarkCount<DataStore.USER_BOOKMARK_LIMIT){
                    boolean isBookmarked = getBookmarkDecision(bookmark);
                    if (isBookmarked) {
                        bookmarkCount++;
                        Controller.getInstance().saveUserBookmark(user,bookmark);
                        System.out.println("New bookmark"+bookmark);
                    }
-                   }
+                 //  }
                 //isKidsFriendly
                 if (user.getUserType().equals(UserType.CHIEF_EDITOR)||user.getUserType().equals(UserType.EDITOR))
                 {

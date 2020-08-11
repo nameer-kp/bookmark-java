@@ -8,26 +8,29 @@ import com.company.bookmark.entities.UserBookmark;
 import com.company.bookmark.managers.BookmarkManager;
 import com.company.bookmark.managers.UserManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DataStore {
 
-    public static final int USER_BOOKMARK_LIMIT = 5;
-    public static final int BOOKMARK_COUNT_PER_TYPE = 5;
-    public static final int TOTAL_USER_COUNT = 5;
-    public static final int BOOKMARK_TYPES_COUNT = 3;
-    public static int USER_BOOKMARK_COUNT = 0;
+//    public static final int USER_BOOKMARK_LIMIT = 5;
+//    public static final int BOOKMARK_COUNT_PER_TYPE = 5;
+//    public static final int TOTAL_USER_COUNT = 5;
+//    public static final int BOOKMARK_TYPES_COUNT = 3;
+//    public static int USER_BOOKMARK_COUNT = 0;
 
-    public static User[] getUsers() {
+    public static List<User> getUsers() {
         return users;
     }
 
-    public static Bookmark[][] getBookmarks() {
+    public static List<List<Bookmark>> getBookmarks() {
         return bookmarks;
     }
 
 
-    private static User[] users=new User[TOTAL_USER_COUNT];
-    private static Bookmark[][] bookmarks=new Bookmark[BOOKMARK_TYPES_COUNT][BOOKMARK_COUNT_PER_TYPE];
-    private static UserBookmark[] userBookmarks = new UserBookmark[TOTAL_USER_COUNT*USER_BOOKMARK_LIMIT];
+    private static List<User> users = new ArrayList<>();
+    private static List<List<Bookmark>> bookmarks = new ArrayList<>();
+    private static List<UserBookmark> userBookmarks = new ArrayList<>();
 
     public static void loadData(){
         loadUser();
@@ -45,9 +48,9 @@ public class DataStore {
     */
         //loading Users with io streams
 
-        String [] data = new String[TOTAL_USER_COUNT];
+       // String [] data = new String[TOTAL_USER_COUNT];
+        List<String> data = new ArrayList<>();
         IOutils.read(data,"User.txt");
-        int rowNum=0;
         for (String row:data) {
             String [] values =row.split("\t");
 
@@ -58,7 +61,8 @@ public class DataStore {
             }
             else {gender=Gender.TRANSGENDER;}
 
-            users[rowNum++]=UserManager.getInstance().createUser(Long.parseLong(values[0]),values[1],values[2],values[3],values[4],gender,values[6]);
+            User user=UserManager.getInstance().createUser(Long.parseLong(values[0]),values[1],values[2],values[3],values[4],gender,values[6]);
+            users.add(user);
 
         }
     }
@@ -70,15 +74,16 @@ public class DataStore {
         bookmarks[0][4]= BookmarkManager.getInstance().createMovie(3004,"Ikiru","",1952,new String[]{"Takashi Shimura","Minoru Chiaki"},new String[]{"Akira Kurosawa"}, MovieGenre.FOREIGN_MOVIES,8.5);
 */
         //using IO streams
-        String[] data = new String[BOOKMARK_COUNT_PER_TYPE];
+        List<String> data = new ArrayList<>();
         IOutils.read(data, "Movie.txt");
-        int colNum = 0;
+        List<Bookmark> bookmarkList = new ArrayList<>();
         for (String row : data) {
             String[] values = row.split("\t");
             String[] cast = values[3].split(",");
             String[] directors = values[4].split(",");
-            bookmarks[0][colNum++] = BookmarkManager.getInstance().createMovie(Long.parseLong(values[0]), values[1], "", Integer.parseInt(values[2]), cast, directors, values[5], Double.parseDouble(values[6])/*, values[7]*/);
+            bookmarkList.add(BookmarkManager.getInstance().createMovie(Long.parseLong(values[0]), values[1], "", Integer.parseInt(values[2]), cast, directors, values[5], Double.parseDouble(values[6])/*, values[7]*/));
         }
+        bookmarks.add(bookmarkList);
     }
     private static void loadWebLink(){/*
         bookmarks[1][0]=BookmarkManager.getInstance().createWebLink(2000,"Taming Tiger, Part 2","http://www.javaworld.com/article/2072759/core-java/taming-tiger--part-2.html","http://www.javaworld.com");
@@ -89,13 +94,14 @@ public class DataStore {
     */
         //using IO streams
 
-            String[] data = new String[BOOKMARK_COUNT_PER_TYPE];
+            List<String> data = new ArrayList<>();
             IOutils.read(data, "Web Link.txt");
-            int colNum = 0;
+            List<Bookmark> bookmarkList= new ArrayList<>();
             for (String row : data) {
                 String[] values = row.split("\t");
-                bookmarks[1][colNum++] = BookmarkManager.getInstance().createWebLink(Long.parseLong(values[0]), values[1], values[2], values[3]/*, values[4]*/);
+                bookmarkList.add(BookmarkManager.getInstance().createWebLink(Long.parseLong(values[0]), values[1], values[2], values[3]/*, values[4]*/));
             }
+            bookmarks.add(bookmarkList);
         }
 
     private static void loadBook(){
@@ -107,20 +113,22 @@ public class DataStore {
         bookmarks[2][3]=BookmarkManager.getInstance().createBook(4003,"Head First Design Patterns","",2004,"O'Reilly Media",new String[]{"Eric Freeman","Bert Bates","Kathy Sierra","Elisabeth Robson"}, BookGenre.TECHNICAL,4.5);
         bookmarks[2][4]=BookmarkManager.getInstance().createBook(4004,"Effective Java Programming Language Guide","",2007,"Prentice Hall",new String[]{"Joshua Bloch"}, BookGenre.TECHNICAL,4.9);
     */
-        String[] data = new String[BOOKMARK_COUNT_PER_TYPE];
+        List<String> data = new ArrayList<>();
+        List<Bookmark> bookmarkList = new ArrayList<>();
         IOutils.read(data, "Book.txt");
-        int colNum = 0;
+        //int colNum = 0;
         for (String row : data) {
             String[] values = row.split("\t");
             String[] authors = values[4].split(",");
-            bookmarks[2][colNum++] = BookmarkManager.getInstance().createBook(Long.parseLong(values[0]), values[1], values[7],Integer.parseInt(values[2]), values[3], authors, values[5], Double.parseDouble(values[6]));
+            bookmarkList.add(BookmarkManager.getInstance().createBook(Long.parseLong(values[0]), values[1], values[7],Integer.parseInt(values[2]), values[3], authors, values[5], Double.parseDouble(values[6])));
         }
+        bookmarks.add(bookmarkList);
     }
 
 
     public static void saveUserBookmark(UserBookmark userBookmark) {
-        userBookmarks[USER_BOOKMARK_COUNT]=userBookmark;
-        USER_BOOKMARK_COUNT++;
+        userBookmarks.add(userBookmark);
+
 
     }
 }

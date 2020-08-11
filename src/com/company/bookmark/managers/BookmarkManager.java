@@ -7,6 +7,7 @@ import com.company.bookmark.entities.*;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.List;
 
 public class BookmarkManager {
     private static BookmarkManager instance = new BookmarkManager();
@@ -51,7 +52,7 @@ public class BookmarkManager {
         webLink.setUrl(url);
         return webLink;
     }
-    public Bookmark[][] getBookmark(){
+    public List<List<Bookmark>> getBookmark(){
 
         return dao.getBookmark();
     }

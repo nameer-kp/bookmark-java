@@ -1,15 +1,14 @@
 package com.company.bookmark.Utils;
 
 import java.io.*;
+import java.util.List;
 
 public class IOutils {
-    public static void read(String[] data, String filename) {
+    public static void read(List<String> data, String filename) {
         try (BufferedReader bf = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF-8"))) {
             String line;
-            int count = 0;
             while ((line = bf.readLine()) != null) {
-                data[count] = line;
-                count++;
+                data.add(line);
             }
 
 
@@ -40,7 +39,7 @@ public class IOutils {
     }
 
     public static void write(String webpage, long id) {
-        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter((new FileOutputStream(String.valueOf(id)+".html")), "UTF-8"))) {
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter((new FileOutputStream("pages/"+String.valueOf(id)+".html")), "UTF-8"))) {
 
             writer.write(webpage);
 

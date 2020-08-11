@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce44f323-2895-4b84-ba94-e5191d1a7cfb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/DataStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/DataStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/BookGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/BookGenre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/KidsFriendlyStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/KidsFriendlyStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/MovieGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/MovieGenre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/UserType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/controllers/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/BookmarkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/BookmarkDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Bookmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Bookmark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/UserBookmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/UserBookmark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/WebLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/WebLink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/BookmarkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/BookmarkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/partner/Shareable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/partner/Shareable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/BookTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/MovieTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/WebLinkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/WebLinkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/Utils/IOutils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/Utils/IOutils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/dao/BookmarkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/managers/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/managers/BookmarkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/managers/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/managers/UserManager.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fQPhBMzfiDYel5qaQ5YCGRjk5v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Launcher">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.bookmark.Launcher" />
+      <module name="bookmark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.bookmark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="commons-lang3-3.11.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/commons-lang3-3.11.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+        <item itemvalue="JAR Application.commons-lang3-3.11.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce44f323-2895-4b84-ba94-e5191d1a7cfb" name="Default Changelist" comment="" />
+      <created>1596147459103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596147459103</updated>
+      <workItem from="1597164618461" duration="3333000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596148184061">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596148184061" />
+    <state width="1870" height="111" key="GridCell.Tab.0.bottom" timestamp="1596162386182">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="111" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
+    <state width="1870" height="111" key="GridCell.Tab.0.center" timestamp="1596162386182">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="111" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
+    <state width="1870" height="111" key="GridCell.Tab.0.left" timestamp="1596162386182">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="111" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
+    <state width="1870" height="111" key="GridCell.Tab.0.right" timestamp="1596162386182">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="111" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
+    <state x="626" y="441" width="658" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596148433095">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="626" y="441" width="658" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.28.1920.1052@0.28.1920.1052" timestamp="1596148433095" />
+    <state x="940" y="131" width="608" height="504" key="refactoring.ChangeSignatureDialog" timestamp="1597165159237">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="940" y="131" width="608" height="504" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1597165159237" />
+  </component>
+</project>

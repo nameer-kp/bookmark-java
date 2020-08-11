@@ -6,9 +6,11 @@ import com.company.bookmark.entities.UserBookmark;
 import com.company.bookmark.managers.BookmarkManager;
 import com.company.bookmark.managers.UserManager;
 
+import java.util.List;
+
 public class Launcher {
-    private static User[] users;
-    private static Bookmark[][] bookmarks;
+    private static List<User> users;
+    private static List<List<Bookmark>> bookmarks;
     private static DataStore store =new DataStore();
 
     private static void loadData(){
