@@ -10,56 +10,33 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+    </expand>
+    <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-    </expand>
-    <select />
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce44f323-2895-4b84-ba94-e5191d1a7cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/DataStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/DataStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/BookGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/BookGenre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/Gender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/KidsFriendlyStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/KidsFriendlyStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/MovieGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/MovieGenre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/constants/UserType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/controllers/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/BookmarkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/BookmarkDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Bookmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Bookmark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/UserBookmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/UserBookmark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/WebLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/entities/WebLink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/BookmarkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/BookmarkManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/managers/UserManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/partner/Shareable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookmark-java/com/company/bookmark/partner/Shareable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/BookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/MovieTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/WebLinkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookmark-java/com/company/bookmark/entities/WebLinkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Book.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.txt" beforeDir="false" afterPath="$PROJECT_DIR$/User.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/DataStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/Utils/IOutils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/Utils/IOutils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/dao/BookmarkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/constants/BookGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/constants/BookGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/constants/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/constants/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/constants/KidsFriendlyStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/constants/KidsFriendlyStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/constants/MovieGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/constants/MovieGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/constants/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/constants/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/entities/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/entities/Bookmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/entities/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/managers/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/managers/BookmarkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/bookmark/managers/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/bookmark/managers/UserManager.java" afterDir="false" />
     </list>
@@ -107,13 +84,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,7 +119,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596147459103</updated>
-      <workItem from="1597164618461" duration="3333000" />
+      <workItem from="1597164618461" duration="4746000" />
+      <workItem from="1597510498253" duration="3693000" />
     </task>
     <servers />
   </component>
@@ -152,7 +132,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -164,29 +156,33 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596148184061" />
-    <state width="1870" height="111" key="GridCell.Tab.0.bottom" timestamp="1596162386182">
+    <state x="768" y="254" width="374" height="598" key="#com.intellij.ide.util.MemberChooser" timestamp="1597513946006">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="111" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
-    <state width="1870" height="111" key="GridCell.Tab.0.center" timestamp="1596162386182">
+    <state x="768" y="254" width="374" height="598" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1597513946006" />
+    <state width="1870" height="151" key="GridCell.Tab.0.bottom" timestamp="1597179205567">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="111" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
-    <state width="1870" height="111" key="GridCell.Tab.0.left" timestamp="1596162386182">
+    <state width="1870" height="151" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1597179205567" />
+    <state width="1870" height="151" key="GridCell.Tab.0.center" timestamp="1597179205566">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="111" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
-    <state width="1870" height="111" key="GridCell.Tab.0.right" timestamp="1596162386182">
+    <state width="1870" height="151" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1597179205566" />
+    <state width="1870" height="151" key="GridCell.Tab.0.left" timestamp="1597179205565">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="111" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1596162386182" />
+    <state width="1870" height="151" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1597179205565" />
+    <state width="1870" height="151" key="GridCell.Tab.0.right" timestamp="1597179205566">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="151" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1597179205566" />
     <state x="626" y="441" width="658" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596148433095">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="626" y="441" width="658" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.28.1920.1052@0.28.1920.1052" timestamp="1596148433095" />
-    <state x="940" y="131" width="608" height="504" key="refactoring.ChangeSignatureDialog" timestamp="1597165159237">
+    <state x="940" y="131" width="608" height="504" key="refactoring.ChangeSignatureDialog" timestamp="1597512955114">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="940" y="131" width="608" height="504" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1597165159237" />
+    <state x="940" y="131" width="608" height="504" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1597512955114" />
   </component>
 </project>

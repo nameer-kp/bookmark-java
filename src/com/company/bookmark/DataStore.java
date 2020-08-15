@@ -1,7 +1,10 @@
 package com.company.bookmark;
 
 import com.company.bookmark.Utils.IOutils;
+import com.company.bookmark.constants.BookGenre;
 import com.company.bookmark.constants.Gender;
+import com.company.bookmark.constants.MovieGenre;
+import com.company.bookmark.constants.UserType;
 import com.company.bookmark.entities.Bookmark;
 import com.company.bookmark.entities.User;
 import com.company.bookmark.entities.UserBookmark;
@@ -54,14 +57,14 @@ public class DataStore {
         for (String row:data) {
             String [] values =row.split("\t");
 
-            int gender =Gender.MALE;
+            Gender gender =Gender.MALE;
             if (values[5]=="1")
             {
                 gender=Gender.FEMALE;
             }
             else {gender=Gender.TRANSGENDER;}
 
-            User user=UserManager.getInstance().createUser(Long.parseLong(values[0]),values[1],values[2],values[3],values[4],gender,values[6]);
+            User user=UserManager.getInstance().createUser(Long.parseLong(values[0]),values[1],values[2],values[3],values[4],gender, UserType.valueOf(values[6]));
             users.add(user);
 
         }
@@ -81,7 +84,7 @@ public class DataStore {
             String[] values = row.split("\t");
             String[] cast = values[3].split(",");
             String[] directors = values[4].split(",");
-            bookmarkList.add(BookmarkManager.getInstance().createMovie(Long.parseLong(values[0]), values[1], "", Integer.parseInt(values[2]), cast, directors, values[5], Double.parseDouble(values[6])/*, values[7]*/));
+            bookmarkList.add(BookmarkManager.getInstance().createMovie(Long.parseLong(values[0]), values[1], "", Integer.parseInt(values[2]), cast, directors, MovieGenre.valueOf(values[5]), Double.parseDouble(values[6])/*, values[7]*/));
         }
         bookmarks.add(bookmarkList);
     }
@@ -120,7 +123,7 @@ public class DataStore {
         for (String row : data) {
             String[] values = row.split("\t");
             String[] authors = values[4].split(",");
-            bookmarkList.add(BookmarkManager.getInstance().createBook(Long.parseLong(values[0]), values[1], values[7],Integer.parseInt(values[2]), values[3], authors, values[5], Double.parseDouble(values[6])));
+            bookmarkList.add(BookmarkManager.getInstance().createBook(Long.parseLong(values[0]), values[1], values[7],Integer.parseInt(values[2]), values[3], authors, BookGenre.valueOf(values[5]), Double.parseDouble(values[6])));
         }
         bookmarks.add(bookmarkList);
     }

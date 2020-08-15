@@ -2,6 +2,8 @@ package com.company.bookmark.managers;
 
 import com.company.bookmark.Utils.HttpConnect;
 import com.company.bookmark.Utils.IOutils;
+import com.company.bookmark.constants.BookGenre;
+import com.company.bookmark.constants.MovieGenre;
 import com.company.bookmark.dao.BookmarkDao;
 import com.company.bookmark.entities.*;
 
@@ -16,7 +18,7 @@ public class BookmarkManager {
     public static BookmarkManager getInstance(){
         return instance;
     }
-    public Movie createMovie(long id,String title,String profileUrl,int releaseYear,String[] cast,String [] directors,String genre,double imbdRating)
+    public Movie createMovie(long id, String title, String profileUrl, int releaseYear, String[] cast, String [] directors, MovieGenre genre, double imbdRating)
     {
         Movie movie = new Movie();
         movie.setId(id);
@@ -30,7 +32,7 @@ public class BookmarkManager {
 
         return movie;
     }
-    public Book createBook(long id,String title,String profileUrl,int publicationYear,String publisher,String[] authors,String genre,double amazonRating)
+    public Book createBook(long id, String title, String profileUrl, int publicationYear, String publisher, String[] authors, BookGenre genre, double amazonRating)
     {
         Book book=new Book();
         book.setId(id);

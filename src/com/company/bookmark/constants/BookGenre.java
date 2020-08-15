@@ -1,15 +1,19 @@
 package com.company.bookmark.constants;
 
-public class BookGenre {
-    private BookGenre(){}
-    public static final String ART="art";
-    public static final String BIOGRAPHY="biography";
-    public static final String CHILDREN="children";
-    public static final String FICTION="fiction";
-    public static final String HISTORY="history";
-    public static final String PHILOSOPHY="philosophy";
-    public static final String RELIGION="religion";
-    public static final String ROMANCE="romance";
-    public static final String SELF_HELP="self help";
-    public static final String TECHNICAL="technical";
+public enum  BookGenre {
+    ART("art"),
+    BIOGRAPHY("biography"),
+    CHILDREN("children"),
+    FICTION("fiction"),
+    HISTORY("history"),
+    PHILOSOPHY("philosophy"),
+    RELIGION("religion"),
+    ROMANCE("romance"),
+    SELF_HELP("self help"),
+    TECHNICAL("technical");
+    private String name;
+    private BookGenre(String name){
+        this.name=name;
+    }
+
 }

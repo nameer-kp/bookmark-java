@@ -1,5 +1,6 @@
 package com.company.bookmark.controllers;
 
+import com.company.bookmark.constants.KidsFriendlyStatus;
 import com.company.bookmark.entities.Bookmark;
 import com.company.bookmark.entities.User;
 import com.company.bookmark.managers.BookmarkManager;
@@ -16,7 +17,7 @@ public class Controller {
         BookmarkManager.getInstance().saveUserBookmark(user,bookmark);
     }
 
-    public void setKidFriendlyStatus(String kidFriendlyStatus, User user, Bookmark bookmark) {
+    public void setKidFriendlyStatus(KidsFriendlyStatus kidFriendlyStatus, User user, Bookmark bookmark) {
         bookmark.setKidFriendlyStatus(kidFriendlyStatus);
         bookmark.setKidsFriendlyMarkedUser(user);
         System.out.println("kidfriendlyStatus"+","+kidFriendlyStatus+"--> "+bookmark+"  Marked by "+bookmark.getKidsFriendlyMarkedUser().getEmail());

@@ -19,15 +19,15 @@ public abstract class Bookmark {
 
     private User sharedBy;
 
-    public String getKidFriendlyStatus() {
+    public KidsFriendlyStatus getKidFriendlyStatus() {
         return kidFriendlyStatus;
     }
 
-    public void setKidFriendlyStatus(String kidFriendlyStatus) {
+    public void setKidFriendlyStatus(KidsFriendlyStatus kidFriendlyStatus) {
         this.kidFriendlyStatus = kidFriendlyStatus;
     }
 
-    private String kidFriendlyStatus= KidsFriendlyStatus.UNKNOWN;
+    private KidsFriendlyStatus kidFriendlyStatus= KidsFriendlyStatus.UNKNOWN;
 
     @Override
     public String toString() {

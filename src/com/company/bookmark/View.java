@@ -40,7 +40,7 @@ public class View {
                 if (user.getUserType().equals(UserType.CHIEF_EDITOR)||user.getUserType().equals(UserType.EDITOR))
                 {
                     if (bookmark.getKidFriendlyStatus().equals(KidsFriendlyStatus.UNKNOWN)&&bookmark.isKidFriendly()){
-                        String kidFriendlyStatus = getKidFriendlyStatusDecision(bookmark);
+                        KidsFriendlyStatus kidFriendlyStatus = getKidFriendlyStatusDecision(bookmark);
                         if(!kidFriendlyStatus.equals(KidsFriendlyStatus.UNKNOWN)) {
                             Controller.getInstance().setKidFriendlyStatus(kidFriendlyStatus,user,bookmark);
 
@@ -62,7 +62,7 @@ public class View {
         return Math.random() < 0.5;
     }
 
-    private static String getKidFriendlyStatusDecision(Bookmark bookmark) {
+    private static KidsFriendlyStatus getKidFriendlyStatusDecision(Bookmark bookmark) {
         return Math.random()<0.4?KidsFriendlyStatus.APPROVED:(Math.random()>=0.4&&Math.random()<0.8)?KidsFriendlyStatus.REJECTED:KidsFriendlyStatus.UNKNOWN;
     }
 

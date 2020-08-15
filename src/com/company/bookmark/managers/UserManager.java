@@ -1,5 +1,7 @@
 package com.company.bookmark.managers;
 
+import com.company.bookmark.constants.Gender;
+import com.company.bookmark.constants.UserType;
 import com.company.bookmark.dao.UserDao;
 import com.company.bookmark.entities.User;
 
@@ -12,7 +14,7 @@ public class  UserManager {
     public static UserManager getInstance(){
         return instance;
     }
-    public User createUser(long id,String email,String password,String firstName,String lastName,int gender,String userType){
+    public User createUser(long id, String email, String password, String firstName, String lastName, Gender gender, UserType userType){
         User user = new User();
         user.setId(id);
         user.setEmail(email);

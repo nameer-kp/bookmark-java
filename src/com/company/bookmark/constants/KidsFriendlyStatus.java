@@ -1,10 +1,17 @@
 package com.company.bookmark.constants;
 
-public class KidsFriendlyStatus {
-    private KidsFriendlyStatus(){
+public enum  KidsFriendlyStatus {
+    APPROVED("approved"),
+    REJECTED("rejected"),
+    UNKNOWN("unknown");
 
+    public String getStatus() {
+        return status;
     }
-    public static String APPROVED="approved";
-    public static String REJECTED="rejected";
-    public static String UNKNOWN="unknown";
+
+    private KidsFriendlyStatus(String status){
+        this.status=status;
+    }
+    private String status;
+
 }
